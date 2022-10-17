@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de IMC</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Cálculo de IMC</h1>
+        <div class="altura">
+            <h3>Altura (ex: 175)</h3>
+            <input type="number" class="alt">
+        </div>
+
+        <div class="peso">
+            <h3>Peso (ex: 82)</h3>
+            <input type="number" class="kg">
+        </div>
+
+        <button id="submit" class="btn" onclick="calculoIMC()">Calcular IMC</button>
+        <button id="reset" class="btn" onclick="limpar()">Limpar</button>
+
+        <div class="resultado">
+            
+            <mark><h3 class="res"></h3></mark>
+        </div>
+
+        <Table>
+            <tr>
+                <th>IMC</th>
+                <th>CLASSIFICAÇÃO</th>
+                <th>OBESIDADE (GRAU)</th>
+            </tr>
+            <tr>
+                <td>MENOR QUE 18,5</td>
+                <td>ABAIXO DO PESO</td>
+                <td style="text-align:center" >0</td>
+            </tr>
+            <tr>
+                <td>ENTRE 18,5 E 24,9</td>
+                <td>SAUDÁVEL</td>
+                <td style="text-align:center" >0</td>
+            </tr>
+            <tr>
+                <td>ENTRE 25,0 E 29,9</td>
+                <td>COM SOBREPESO</td>
+                <td style="text-align:center" >I</td>
+            </tr>
+            <tr>
+                <td>ENTRE 30,0 E 39,9</td>
+                <td>OBESO</td>
+                <td style="text-align:center" >II</td>
+            </tr>
+            <tr>
+                <td>MAIOR QUE 40,0</td>
+                <td>OBESIDADE GRAVE</td>
+                <td style="text-align:center" >III</td>
+            </tr>
+        </Table>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
